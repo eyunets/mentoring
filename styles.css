@@ -10,23 +10,30 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-};
+}
 .cards .card {
-  border-radius: 50px;
-  width:300px;
+  border-radius: 20px;
+  max-width: 500px;
   margin: 10px;
   background-color: white;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  flex-basis: 300px;
+  flex-grow: 1;
+  flex-shrink: 1;
   overflow: hidden;
   text-overflow: ellipsis;
+  transition: flex-grow 2s, opacity 2s;
+  box-shadow: 10px 10px 15px  black;
+}
+.removed {
+  opacity: 0;
+  flex-grow: 0.00001;
 }
 .card .card_img img {
-  border-top-left-radius: 30px;
-  border-top-right-radius: 10px;
   max-width: 100%;
   height: auto;
+  filter: contrast(80%);
 }
 .card_title {
   color: darkgray;
