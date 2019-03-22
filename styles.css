@@ -2,7 +2,7 @@ body {
   background-color: lightgray;
 }
 
-#main {
+.main {
   width: 90%;
   margin: auto;
 }
@@ -20,11 +20,14 @@ body {
   flex-direction: column;
   flex-basis: 300px;
   flex-grow: 1;
-  flex-shrink: 1;
+  flex-shrink: 0.5;
   overflow: hidden;
   text-overflow: ellipsis;
   transition: flex-grow 2s, opacity 2s;
-  box-shadow: 10px 10px 15px  black;
+  box-shadow: 10px 10px 15px black;
+}
+.cards .card:hover .card_img img {
+  filter: contrast(100%);
 }
 .removed {
   opacity: 0;
@@ -52,14 +55,18 @@ body {
   font-size: 12px;
   line-height: 1.5;
 }
-#search form {
+.search form {
   text-align: center;
   padding: 10px;
 }
-#search input {
+.search input {
   text-align: center;
 }
-#search input:focus {
+.upload_button form {
+  padding: 10px;
+  text-align: center;
+}
+.search input:focus {
   width: 100%;
   box-sizing: border-box;
   text-align: center;
