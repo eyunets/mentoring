@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="javascript.js"></script>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <div class="main">
       <div class="search">
-        <form>
-          <input class="card_search" type="text" oninput="search(this)" />
+        <form action="#">
+          <input class="card_search" type="text" />
         </form>
       </div>
       <div class="upload_button">
-        <form>
-          <input
-            id="json_upload"
-            type="file"
-            onchange="parseJSON(this)"
-            value="Upload"
-          />
+        <form action="#">
+          <input class="parseJSON" type="file" value="Upload" />
         </form>
       </div>
       <br />
@@ -26,4 +20,5 @@
       <br />
     </div>
   </body>
+  <script src="bundle.js"></script>
 </html>

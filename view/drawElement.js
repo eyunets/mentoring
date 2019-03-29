@@ -1,6 +1,6 @@
-import { search } from './search.js';
+import { search } from '../service/search';
 import { createCardElement } from './createCardElement';
-import { parseJSON } from './parseJSON';
+import { parseJSON } from '../service/parseJSON';
 function drawElement(event) {
   var cardsContainer = document.getElementsByClassName('cards');
   cardsContainer[0].innerHTML = '';

@@ -1,4 +1,4 @@
-import { setArray } from './parsedArray';
+import { setArray } from '../data/parsedArray.js';
 export function parseJSON(event) {
   return new Promise(resolve => {
     var result;

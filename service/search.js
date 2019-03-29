@@ -1,4 +1,4 @@
-import { getArray } from './parsedArray';
+import { getArray } from '../data/parsedArray.js';
 export function search(name) {
   var reg = new RegExp(name, 'i');
   var cards = getArray();
